@@ -1,9 +1,9 @@
 package com.sharewire.googlemapsclustering.sample;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.libraries.maps.model.LatLng;
+import com.google.android.libraries.maps.model.LatLngBounds;
 
 import java.util.Random;
 

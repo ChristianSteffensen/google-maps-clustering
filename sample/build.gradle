@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
 
     defaultConfig {
         applicationId "net.sharewire.googlemapsclustering.sample"
@@ -27,7 +26,10 @@ android {
 
 dependencies {
     implementation project(':library')
-    implementation "com.android.support:support-v4:$supportVersion"
-    implementation "com.android.support:appcompat-v7:$supportVersion"
-    implementation "com.google.android.gms:play-services-maps:$playServicesVersion"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.github.jeffdgr8:google-maps-sdk:v3.0.0-beta'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation "com.google.android.gms:play-services-base:17.0.0"
+    implementation "com.google.android.gms:play-services-location:17.0.0"
 }
